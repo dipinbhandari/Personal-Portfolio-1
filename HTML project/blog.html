@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blog</title><!-- title of the webpage -->
+	<meta name="viewport" content="width=device-width" >
+	<link rel="stylesheet" type="text/css" href="style.css"><!-- link to css file -->
+	<!-- using internal css -->
+	<style type="text/css">
+		.three{/* style for division of main blog */
+			font-size: 22px;
+			background-color: white;
+			padding: 15px;
+		}
+		.image{/* style for image */
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<nav><!-- navigation bar -->
+		<table border="1" style="width: 70%; height: 65px; margin-top: 10px; margin-left: 250px">
+			<tr>
+				<th class="on" style="color: white" width="17%"><a href="home.html"> HOME</a></th>
+				<th class="one" style="color: white" width="17%"><a href="contact.html">CONTACT</a></th>
+				<th class="one" style="color: white" width="17%"><a href="blog.html"> BLOG</a></th>
+				<th class="one" style="color: white" width="16%"><a href="cv.html"> CV </a></th>
+				<th class="one" style="color: white" width="16%"><a href="login.html"> LOG IN</a></th>
+				<th class="one" style="color: white" width="17%"><a href="research.html">RESEARCH</a></th>
+			</tr>
+		</table>
+	</nav><br>
+	<div align="center">
+		<!-- images for toggle -->
+		<img src="tech-innovation.jpg" id="tech" class="image" style="width: 40%; height: 10%">
+		
+		<img src="tech.jpg" id="tack" class="image" style="width: 40%; height: 100%">
+		<figcaption style="font-size: 30px; font-weight: bold">Internet</figcaption>
+		<button onclick="toggle()">TOGGLE</button>
+	</div><br>
+	<!-- division for main blog -->
+	<div class="three">
+		<h1 align="center">Impact of internet on our daily lives</h1>
+		<div>
+			<img src="impact.jpg" width="35%" height="10%" align="right">
+		</div>
+		<div style="text-align: left; margin-right: 40%;">
+		<p>Technique has a significant impact on our daily lives. Technology is developing at a very high rate and people from different places and different field uses it for different purposes and the connection between the world is due to the help of internet because that will give the outmost future ahead of us. Noone can ignore it on their daily lives. All were relate with technology and internet with directly or indrectly. Nowadays, the most popular apps or websites are <a href="https:/www.google.com">google</a>, <a href="https:/www.facebook.com">facebook</a>, <a href="https:/www.instagram.com"> instagram</a>, <a href="https://www.gmail.com">gmail</a> and so many others.</p>
+		
+		<p>According to website <a href="https://www.123helpme.com/essay/The-Impact-of-The-Internet-in-Your-252413">123helpme</a> and <a href="https://www.bartleby.com/essay/The-Impact-of-the-Internet-in-Our-P32EFJC4K6ZYS"> bartleby research </a>, as seen in the history, internet is the most important invention around the world which connects people through phones, satellites, cables, computer and so on. Due to people all over the world use it everyday, internet is most in demand. </p>
+		</div>
+		<p>It would be vital to consider some of the positive and negative aspects of how this medium influences us, as well as the effects it has on our social behavior and the future. The Internet has had a huge impact on our lives, and there are numerous benefits to using it. The use of permits technically for traveling or buying tickets are electronically through the internet, paying bills, shopping through the internet without going out (simply browsing), playing games, and, most importantly, the merit of potentially downloading music and movies in no time (just a click).</p>
+		
+		<div style="text-align: left; margin-right: 5%;">
+			<p>The advantages of internet technology are given as below:
+				<div>
+					<img src="advanatage.jpg" width="35%" height="10%" align="right">
+				</div>
+				<ul>
+					<li>Men can do office work as well as spend time with their family because of internet which helps their work in short period of time.</li>
+					<li>All can create or use social contacts all over the world and find their friends by staying at home.</li>
+					<li>It is easy to exchange our informations to each other.</li>
+					<li>It is very helpful for making profit on business by advertising products on internet.</li>
+					<li>For online shopping, online payment, playing games and entertainment, it is helpful.</li>
+					<li>It influences the growth of economy and living standards.</li>
+					<li>It is very helpful on education for the students.</li>
+				</ul>
+			</p>
+		</div>
+		<p>It also have some negative impacts. So, the disadvantages of internet technology are given as below:
+			<div>
+				<img src="disadvantagaes.jpg" width="35%" height="10%" align="right">
+			</div>
+			<ul>
+				<li>It worsens social interactions by taking away real communication and relationship boundaries.</li>
+				<li>Technology is used by people as an avoidance strategy.</li>
+				<li>The one of the problem is memory loss.</li>
+				<li>The another impact of technology is the imbalance of brain.</li>
+				<li>As the usage of tehnology increases, people of next generations are no longer thinking on their own.</li>
+				<li>Nothing information on the internet is secured due to the hacking activities.</li>
+			</ul>
+		</p>
+		<h2>Conclusion</h2>
+		<p>Everyday, internet expands by the social, economic and political activities of people all over the world. In this new world, there is no geographical separation and there are no borders and all peple are encouraged to participate and contribute drawing on their experiences and resources. As the other topics, it has also both positive and negative impacts.<br>
+		And the negative impacts are nothing is secured on the internet. Internet is also one cause of global warming so it affects the many people's lives.</p>
+	</div>
+	<script type="text/javascript">
+		//function for toggle images
+		function toggle(){
+			//saving data of form in below variables
+			var image1=document.getElementById("tech");
+			var image2=document.getElementById("tack");
+			if(image1.style.display=="none"){
+				image1.style.display="block";
+				image2.style.display="none";
+			}
+			else{
+				image2.style.display="block";
+				image1.style.display="none";
+			}
+			
+		}
+		var element=document.getElementById("tech");
+		element.style.display="block";
+	</script>
+	<br>
+	<!-- footer -->
+	<footer>
+		<!-- table of footer -->
+		<table border="1" align="center" id="one" border="1" style="width: 50%; height: 60px">
+			<tr style="color: white">
+				<th width="30%">EXIT</th>
+				<th width="35%">HELP</th> 
+				<th width="35%">&copyAJAYA KHANAL</th>
+			</tr>
+		</table>   
+	</footer>
+</body>
+</html>

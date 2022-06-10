@@ -1,0 +1,38 @@
+body{
+	background-color: #cccccc;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+.login{
+	width: 360px;
+	padding: 10% 0 0;
+	margin: auto;
+}
+.form{
+	position: relative;
+	background: rgb(0,0,255);
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 40px;
+	padding-top: 30px;
+	text-align: center;
+}
+.form input{
+	background: #ccffff;
+	outline: 1;
+	width: 100%;
+	border: 0;
+	margin: 0 0 16px;
+	padding: 16px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+.form button{
+	outline: 0;
+	background-color: #800000;
+	width: 100%;
+	border: 0;
+	padding: 16px;
+	color: #FFFFFF;
+}

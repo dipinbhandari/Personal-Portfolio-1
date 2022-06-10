@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>contact</title>
+    <!-- title of the webpage -->
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- link to css file -->
+    <!-- using internal css -->
+    <style type="text/css">
+      .contact {
+        /* style for division of suggestion form */
+        margin-top: -50px;
+        margin-left: 80px;
+        margin-right: 80px;
+        padding: 40px;
+        text-align: center;
+        font-size: 20px;
+      }
+      .form {
+        /* style for suggestion form */
+        text-align: left;
+        padding-left: 14px;
+      }
+      .form input {
+        /* style for input section of suggestion form */
+        background: #ccffff;
+        box-sizing: border-box;
+        font-size: 13px;
+        outline: 1;
+        border: 0;
+        padding: 12px;
+      }
+      .tab {
+        /* style for table of suggestion form */
+        background-color: #999966;
+      }
+      .about {
+        /* style for about us division */
+        font-size: 20px;
+        background-color: white;
+        margin-left: 25%;
+        margin-right: 20%;
+        margin-top: -40px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <!-- navigation bar -->
+      <ul>
+        <li class="on">
+          <a href="home.html"> HOME</a>
+        </li>
+        <li class="one">
+          <a href="contact.html">CONTACT</a>
+        </li>
+        <li class="one">
+          <a href="blog.html"> BLOG</a>
+        </li>
+        <li class="one">
+          <a href="cv.html"> CV </a>
+        </li>
+        <li class="one">
+          <a href="login.html"> LOG IN</a>
+        </li>
+        <li class="one">
+          <a href="research.html">RESEARCH</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 align="center">CONTACT US</h1>
+    <div class="contact">
+      <!-- table for suggestion box -->
+      <table class="tab" align="center" border="1" style="width: 45%">
+        <tr>
+          <td align="center">
+            <h2 align="center"><b> Suggestion: </b></h2>
+            <!-- suggestion form -->
+            <form class="form" name="submitform" onsubmit="valid()">
+              FirstName:
+              <input
+                type="text"
+                name="FirstName"
+                placeholder="FirstName"
+                required
+              /><br /><br />
+              LastName:
+              <input
+                type="text"
+                name="LastName"
+                placeholder="LastName"
+                required
+              /><br /><br />
+              Country:
+              <select name="group" size="1px;">
+                <!-- group created -->
+                <option value="Nepal" style="font-size: 14px">Nepal</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Others">Others</option></select
+              ><br /><br />
+              Gender:<br />
+              Male<input type="radio" name="Gender" value="Male" checked />
+              Female<input type="radio" name="Gender" value="Female" />
+              Custom<input
+                type="radio"
+                name="Gender"
+                value="custom"
+              /><br /><br />
+              Email:
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+              /><br /><br />
+              <b>Comments:</b><br />
+              <textarea
+                name="comments"
+                rows="10"
+                cols="30"
+                placeholder="write a Comments"
+                style="font-size: 16px"
+              ></textarea
+              ><br />
+              <button>SUBMIT</button>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="about" align="center" ;>
+      <h2>ABOUT US</h2>
+      <p>
+        I am a student of itahari international college where studying B.Sc.
+        computing and this website is created for the course work.
+      </p>
+    </div>
+
+    <script type="text/javascript">
+      //function for form validation
+      function valid() {
+        //saving data of form in below variables
+        var email = document.forms["submitform"]["email"].value;
+        var comments = document.forms["submitform"]["comments"].value;
+        if (email == "" || comments == "") {
+          //condition for showing below message in alert box
+          alert("please fill email and comments correctly.");
+        } else {
+          //below message in alert box will be appear if the above condition is false
+          alert("Your suggestion is accepted.");
+        }
+      }
+    </script>
+    <!-- footer -->
+    <footer>
+      <!-- table for footer -->
+      <table
+        border="1"
+        align="center"
+        id="one"
+        border="1"
+        style="width: 50%; height: 60px"
+      >
+        <tr style="color: white">
+          <th width="30%">EXIT</th>
+          <th width="35%">HELP</th>
+          <th width="35%">&copyAJAYA KHANAL</th>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>

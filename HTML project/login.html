@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOG IN</title><!-- title of the webpage -->
+	<meta name="viewport" content="width=device-width" >
+	<link rel="stylesheet" type="text/css" href="login.css"><!-- link to css file -->
+	<link rel="stylesheet" type="text/css" href="style.css"><!-- link to css file -->
+	<!-- using internal css -->
+	<style type="text/css">
+		h2{
+			font-size: 30px;
+		}
+		p{
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<nav><!-- navigation bar -->
+			<table border="1" style="width: 70%; height: 65px; margin-top: 10px; margin-left: 250px">
+				<tr>
+					<th class="on" style="color: white" width="17%"><a href="home.html"> HOME</a></th>
+					<th class="one" style="color: white" width="17%"><a href="contact.html">CONTACT</a></th>
+					<th class="one" style="color: white" width="17%"><a href="blog.html"> BLOG</a></th>
+					<th class="one" style="color: white" width="16%"><a href="cv.html"> CV </a></th>
+					<th class="one" style="color: white" width="16%"><a href="login.html"> LOG IN</a></th>
+					<th class="one" style="color: white" width="17%"><a href="research.html">RESEARCH</a></th>
+				</tr>
+			</table>
+		</nav>
+	</div>
+	<br><br> 
+	<div class="log-in">
+		<div class="form"><!-- log in form -->
+			<form class="log" name="log form" onsubmit="validation()">
+				<h2><b>LOG IN</b></h2>
+				<input type="text" name="userName" placeholder="name of the user"><br><br>
+				<input type="email" name="email" placeholder="email"><br><br>
+				<input type="password" name="password" placeholder="password"><br>   <br>
+				<button>LOG IN</button>
+			</form>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		//function for form validation
+		function validation(){
+			//saving data of form in below variables
+			var userName = document.forms["log form"]["userName"].value;
+			var email = document.forms["log form"]["email"].value;
+			var password = document.forms["log form"]["password"].value;
+			if(userName==""||email==""||password==""){//condition for showing below message in alert box
+				alert("Please fill all credentials");
+			}
+			else{//below message in alert box will be appear if the above condition is false
+				alert("Your id is logged in sucessfully"); 
+			}
+		}
+	</script>
+	<!-- footer -->
+	<footer>
+		<!-- table of footer -->
+		<table border="1" align="center" id="one" border="1" style="width: 50%; height: 60px">
+			<tr style="color: white">
+				<th width="30%">EXIT</th>
+				<th width="35%">HELP</th> 
+				<th width="35%">&copyAJAYA KHANAL</th>
+			</tr>
+		</table>   
+	</footer>
+</body>
+</html>
